@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OpenClaw self-check, by Hearth (jzzystudios.com/hearth/check). Free, read-only, runs on YOUR machine only.
+"""OpenClaw self-check. Free, read-only, runs on YOUR machine only.
 
     python3 openclaw-check.py            (Python 3.8+, no installs, no network calls except to your own computer)
 
@@ -172,7 +172,6 @@ def check_heartbeat(cfg):
         say("warn", f"isolatedSession/lightContext not both on: OpenClaw docs say a run can send ~100K tokens of "
                     f"history, up to ~{runs * 100_000 * 30 / 1e6:.0f}M input tokens a month while idle. Turn both "
                     f"on, or set every: \"0m\" if you don't need it")
-    print(f"  {DIM}Price it for your model: https://jzzystudios.com/hearth/cost{END}")
 
 
 def skill_dirs(cfg):
@@ -238,7 +237,6 @@ def main():
     check_heartbeat(cfg)
     check_skills(cfg)
     print(f"\nResult: {found['bad']} serious, {found['warn']} to look at.")
-    print("Made by Hearth, a private AI agent with no heartbeat bill: https://jzzystudios.com/hearth")
     return 1 if found["bad"] else 0
 
 

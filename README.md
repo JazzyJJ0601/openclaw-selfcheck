@@ -30,8 +30,6 @@ Each finding is marked `ok`, `warn` or `BAD`, with what to change.
 - Skill locations: https://docs.openclaw.ai/tools/skills
 - Malicious skills report (The Hacker News, 2 Feb 2026): https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html
 
-There's also a browser version at https://jzzystudios.com/hearth/check.
-
 ## Licence
 
 MIT
